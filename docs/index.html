@@ -2,40 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>小程序文档</title>
+  <title>酷家乐小程序开发文档</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="shortcut icon" href="//qhstaticssl.kujiale.com/static/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="/plugin/default.css">
 </head>
 <body>
-  <div id="app">加载中....</div>
+  <div id="app">loading....</div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: '',
-      loadSidebar: true, // 展示左侧菜单
-      subMaxLevel: 2, // 是否展示文中内容菜单
-      coverpage: true, // 显示封面
+      // 展示左侧菜单
+      loadSidebar: true,
+      // 显示封面
+      coverpage: true,
+      // 封面是否占据全屏 
       onlyCover: true,
-      loadNavbar: true, // 显示顶部导航栏
-      subMaxLevel: 3, // 左侧菜单最大层级
-      auto2top: true, // url 改变时自动滚动到屏幕上方
-      name: "<span style='color:#42b983;'>Doscify中文文档</span>", // 左侧顶部文字
-      nameLink: "/", // 左侧顶部文字超链接
-      autoHeader: true, // 优先加载页面标题
-      executeScript: true, // 启用js脚本
-      formatUpdated: "更新于{YYYY}({YY})/{MM}/{DD} {HH}:{mm}:{ss}:{fff}",
-      routerMode: "hash", // 路由模式 hash | history
-      notFoundPage: true, // 显示404页面
-      count:{ countable:true, fontsize:'0.9em', color:'rgb(90,90,90)', language:'chinese' }, // 字数统计显示
+      // 显示顶部导航栏
+      loadNavbar: true,
+      // 左侧菜单最大层级 
+      subMaxLevel: 3,
+      // url 改变时自动滚动到屏幕上方
+      auto2top: true,
+      // 左侧顶部文字
+      name: "<span style='color:#42b983;'>酷家乐小程序开发文档</span>",
+      // 左侧顶部文字超链接
+      nameLink: "/",
+      // 优先加载页面标题
+      autoHeader: true,
+      // 启用js脚本
+      executeScript: true,
+      // 更新时间显示变量
+      formatUpdated: "更新于{YYYY}/{MM}/{DD} {HH}:{mm}:{ss}",
+      // 路由模式 hash | history
+      routerMode: "hash",
+      // 显示404页面
+      notFoundPage: true,
+      // 字数统计显示
+      count:{ countable:true, fontsize:'0.9em', color:'rgb(90,90,90)', language:'chinese' },
       // 统一加上footer
       plugins: [
         function (hook) {
           var footer = [
             "<hr/>",
-            "<footer>",
+            "<footer style='text-align: center;'>",
             '<span>Copyright &copy;2021</span>',
             '<span><a href="https://www.kujiale.com/" target="_blank"> 酷家乐</a>.</span>',
             "</footer>",
@@ -46,17 +57,58 @@
           });
         },
       ],
+      // 全文搜索配置
+      search: "auto", 
+      search: {
+        // 过期时间，单位毫秒，默认一天
+        maxAge: 86400000,
+        // 搜索不到结果时显示
+        noData: '找不到结果',
+        // 自动
+        paths: '/',
+        // 搜索框提示
+        placeholder: '搜索',
+        depth: 6,
+        namespace: 'kjl',
+      },
+      // 剪切板
+      copyCode: {
+        buttonText : '点击复制',
+        errorText  : 'Error',
+        successText: '复制成功!'
+      },
+      // 提示面板
+      'flexible-alerts': {
+        note: {
+          label: "note"
+        },
+        tip: {
+          label: "tip"
+        },
+        warning: {
+          label: "warning"
+        },
+        attention: {
+          label: "Achtung"
+        }
+      },
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <!-- 开启emoji -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="/plugin/emoji.js"></script>
   <!-- 放大图片 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="/plugin/zoom-image.js"></script>
   <!-- 复制到剪贴板 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="/plugin/copycode.js"></script>
   <!-- 字数统计 -->
-  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="/plugin/countable.js"></script>
+  <!-- 全文搜索 -->
+  <script src="/plugin/search.js"></script>
+  <!-- 分页 -->
+  <script src="/plugin/pagination.js"></script>
+  <!-- 提示面板 -->
+  <script src="/plugin/flexible-alerts.js"></script>
 </body>
 </html>

@@ -1,5 +1,2 @@
-- [百度](https://www.baidu.com)
-- [快速入门](/md/a.md)
-- 下拉菜单
-    - [百度](https://www.baidu.com)
-    - [快速入门](/md/a.md)
+- [酷家乐](https://www.kujiale.com/)
+- [快速上手](/QuickStart/index.md)
