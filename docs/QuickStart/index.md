@@ -30,4 +30,5 @@ import { AnimationGrow, Button } from '../../..';
 > alert.
 #### 三级标题
 
+![icon](../assets/icon.png ":size=100*100")
 ## 标题4
