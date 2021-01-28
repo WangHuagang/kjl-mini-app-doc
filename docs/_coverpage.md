@@ -1,12 +1,10 @@
-![logo](//qhstaticssl.kujiale.com/static/images/favicon.ico)
+![logo](https://qhyxpicoss.kujiale.com/2017/08/24/LGOSQ2YKAEBKKJ3IAAAAAAQ8_64x64.png?x-oss-process=image/resize,w_64,h_64 ":size=64")
 
-# 酷家乐小程序文档
+# 酷家乐小程序开发文档
 
-> 酷家乐提供的一种工具开放能力.
+* 云设计工具的一种开放能力
+* 基于云设计工具实现扩展功能
+* 工具中启动、运行，与主场景交互
 
-<!-- * 前端框架：vue-cli、vue-router、axios、vuex
-* UI类库：Mint-UI、Vant
-* 后端数据接口：Express、MongoDB -->
-
-[GitHub](https://github.com/Hanxueqing/Douban-Movie.git)
-[Get Started](/md/a.md)
+[酷家乐](https://www.kujiale.com/)
+[Get Started](/Introduction/index.md)

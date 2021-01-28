@@ -22,14 +22,6 @@ alert(122)
 ![logo](https://docsify.js.org/_media/icon.svg ":size=100")
 
 
-<details>
-<summary>自我评价（点击展开）</summary>
-
-- Abc
-- Abc
-
-</details>
-
 <div style='color: red'>
 
 - listitem
@@ -37,3 +29,24 @@ alert(122)
 - listitem
 
 </div>
+
+<details>
+<summary>展开源码</summary>
+
+``` js
+const a = 1
+import * as React from 'react';
+import { AnimationGrow, Button } from '../../..';
+```
+</details>
+<br>
+
+> [!NOTE]
+> An alert of type 'note' using global style 'callout'.
+
+> [!TIP|style:flat|label:My own heading|iconVisibility:hidden]
+> An alert of type 'tip' using alert specific style 'flat' which overrides global style 'callout'.
+> In addition, this alert uses an own heading and hides specific icon.
+
+
+
