@@ -121,3 +121,5 @@ const getUserInfo = async () => {
 ## 添加线上入口
 
 如果需要添加固定入口，可以联系酷家乐相关工作人员。
+
+ {docsify-updated}
