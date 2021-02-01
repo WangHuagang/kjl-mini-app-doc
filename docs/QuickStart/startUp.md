@@ -118,3 +118,5 @@ bootstrap().then(() => {
 
 ![小程序启动示例](//qhstaticssl.kujiale.com/newt/101687/image/png/1612162676461/1E2A63269C313B7FE5A4BE7B2346BC48.png)
 
+ {docsify-updated}
+
