@@ -7,6 +7,7 @@
     - [全局提示框](/Service/MiniAppToastService.md)
     - [获取方案信息](/Service/MiniAppDesignBaseInfoService.md)
     - [启动/关闭](/Service/MiniAppBootstrapService.md)
+    - [获取选中模型尺寸](/Service/MiniAppSelectInnerSpaceService.md)
 - [项目实战](/a)
 - [常见问题](/b)
 - [变更日志](/c)
