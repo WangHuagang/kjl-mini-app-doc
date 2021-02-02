@@ -3,4 +3,11 @@
     <!-- - [小程序接入指南](/QuickStart/accessGuide.md) -->
 - [小程序启动](/QuickStart/startUp.md)
 - [小程序通信](/QuickStart/communication.md)
+- [常用SDK](/Service/index.md)
+    - [全局提示框](/Service/MiniAppToastService.md)
+    - [获取方案信息](/Service/MiniAppDesignBaseInfoService.md)
+    - [启动/关闭](/Service/MiniAppBootstrapService.md)
+- [项目实战](/a)
+- [常见问题](/b)
+- [变更日志](/c)
 <!-- - [开发](README.md) -->
