@@ -9,6 +9,7 @@
 | :-----| :---- | :---- | :---- |
 | getSelectedInnerSpace() | 获取当前选中内空尺寸及当前内空的相对坐标 | - | `InnerSpaceResult` |
 | unSelected() | 取消选中当前模型 | - | `boolean` |
+| watcher | 监听选中模型的数据 | - | `InnerSpaceResult` |
 
 ### 参数
 
@@ -52,6 +53,21 @@ const unSelectedModel = () => {
   const unSelectModelService = sappSDK.getService(MiniAppSelectInnerSpaceService);
   if (unSelectModelService) {
     unSelectModelService.unSelected();
+  }
+}
+```
+
+#### 监听选中模型
+```js
+import { sappSDK } from 'servkit';
+import { MiniAppSelectInnerSpaceService } from 'custom-miniapp-sdk';
+
+const unSelectedModel = () => {
+  const selectModelService = sappSDK.getService(MiniAppSelectInnerSpaceService);
+  if (selectModelService) {
+    selectModelService.watcher.on((model) => {
+      console.log(model);
+    });
   }
 }
 ```
