@@ -17,12 +17,12 @@
 
 #### baseInfo
 
-| 字段 | 说明 | 类型 | 默认值 |
+| 字段 | 说明 | 类型 | 示例 |
 | :-----| :---- | :---- | :----|
-| accountName | 设计师昵称 | `string` |  |
-| accountPhone | 设计师手机号 | `string` |  |
-| userId | 用户ID | `string` |  |
-| designId | 方案ID | `string` |  |
+| accountName | 设计师昵称 | `string` | `ku昵称` |
+| accountPhone | 设计师手机号 | `string` | `135********` |
+| userId | 用户ID | `string` | `3F3423422` |
+| designId | 方案ID | `string` | `235DDGE` |
 
 ### 示例
 
